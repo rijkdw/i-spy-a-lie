@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ispy/debug/debugdrawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
+      drawer: DebugDrawer(),
       body: homeScreen()
     );
   }
@@ -83,10 +85,11 @@ Widget _buttons() {
 
 Widget _logo() {
   return Text(
-    "I   S P Y   A   L I T T L E   L I E !",
+    "I SPY A LITTLE LIE!",
     style: GoogleFonts.lato(
       fontWeight: FontWeight.w300,
       fontSize: 50,
+      letterSpacing: 6
     ),
   );
 }
