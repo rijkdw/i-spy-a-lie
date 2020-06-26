@@ -9,6 +9,9 @@ class DebugDrawer extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             child: Text('Debug drawer for screen navigation'),
+            decoration: BoxDecoration(
+              color: Colors.blue
+            ),
           ),
           ListTile(
             title: Text('Login screen'),
